@@ -229,6 +229,10 @@
             font-family: serif;
         }
 
+        .sp-br {
+            display: none;
+        }
+
         section {
             background-color: #ffffff;
             padding: 60px 50px;
@@ -459,10 +463,11 @@
             }
 
             .catchphrase {
-                padding: 30px 20px;
-                font-size: 1.1rem;
+                padding: 30px 10px;
+                font-size: clamp(0.8rem, 4vw, 0.95rem);
                 line-height: 2;
                 margin-bottom: 50px;
+                letter-spacing: 0;
             }
 
             .catchphrase::before {
@@ -475,6 +480,10 @@
                 bottom: -35px;
                 right: 10px;
                 font-size: 4rem;
+            }
+
+            .sp-br {
+                display: block;
             }
 
             .map-container {
@@ -515,8 +524,8 @@
         </div>
 
         <div class="catchphrase">
-            ご近所さんや子育て家族がホッと一息つける、体に優しい手作りの味。<br>
-            たっぷりの野菜と自慢の手作りパン、愛情込めたデザートで、<br>心もお腹も満たされる穏やかな時間を。
+            ご近所さんや子育て家族がホッと一息つける、<br class="sp-br">体に優しい手作りの味。<br>
+            たっぷりの野菜と自慢の手作りパン、<br class="sp-br">愛情込めたデザートで、<br>心もお腹も満たされる穏やかな時間を。
         </div>
 
         <section id="about">
@@ -551,7 +560,7 @@
                 <div class="menuSlides fade"><img src="menu6.jpg" alt="メニュー"></div>
                 <div class="menuSlides fade"><img src="menu7.jpg" alt="メニュー"></div>
             </div>
-            <div style="text-align: center; font-size: 0.95rem; line-height: 1.8; color: var(--main-text); margin-top: 20px;">
+            <div style="max-width: 500px; margin: 20px auto 0; text-align: left; font-size: 0.95rem; line-height: 1.8; color: var(--main-text);">
                 <p>上記のプレートは一部となっております。<br>
                 2〜3日ごとに内容が変わりますので、<br>
                 季節の食材や、その時おすすめのお料理をお楽しみください。</p>
@@ -575,6 +584,7 @@
                 <p><strong>📞 お電話でのご予約</strong><br><span
                         style="font-size: 1.4rem; font-weight: bold; color: var(--main-text);">090-8002-5897</span></p>
                 <p style="margin-top: 30px;"><strong>📱 Instagram DM</strong><br>
+                    <span style="font-size: 0.95rem; display: inline-block; margin: 10px 0 5px;">DMでのご予約は前日までにお願いいたします</span><br>
                     <a href="https://www.instagram.com/cafe_shokona/" class="insta-btn" target="_blank">Instagramを開く</a>
                 </p>
             </div>
